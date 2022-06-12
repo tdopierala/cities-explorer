@@ -1,0 +1,804 @@
+{
+	"cities": [
+		{
+			"id": 1,
+			"name": "Warszawa",
+			"district": "Warszawa",
+			"voivodship": "mazowieckie",
+			"population": 1792718,
+			"area": 517.2
+		},
+		{
+			"id": 2,
+			"name": "Kraków",
+			"district": "Kraków",
+			"voivodship": "małopolskie",
+			"population": 780796,
+			"area": 326.9
+		},
+		{
+			"id": 3,
+			"name": "Łódź",
+			"district": "Łódź",
+			"voivodship": "łódzkie",
+			"population": 667923,
+			"area": 293.3
+		},
+		{
+			"id": 4,
+			"name": "Wrocław",
+			"district": "Wrocław",
+			"voivodship": "dolnośląskie",
+			"population": 641201,
+			"area": 292.8
+		},
+		{
+			"id": 5,
+			"name": "Poznań",
+			"district": "Poznań",
+			"voivodship": "wielkopolskie",
+			"population": 530464,
+			"area": 261.9
+		},
+		{
+			"id": 6,
+			"name": "Gdańsk",
+			"district": "Gdańsk",
+			"voivodship": "pomorskie",
+			"population": 470633,
+			"area": 262
+		},
+		{
+			"id": 7,
+			"name": "Szczecin",
+			"district": "Szczecin",
+			"voivodship": "zachodniopomorskie",
+			"population": 396472,
+			"area": 300.6
+		},
+		{
+			"id": 8,
+			"name": "Bydgoszcz",
+			"district": "Bydgoszcz",
+			"voivodship": "kujawsko-pomorskie",
+			"population": 341692,
+			"area": 176
+		},
+		{
+			"id": 9,
+			"name": "Lublin",
+			"district": "Lublin",
+			"voivodship": "lubelskie",
+			"population": 337788,
+			"area": 147.5
+		},
+		{
+			"id": 10,
+			"name": "Białystok",
+			"district": "Białystok",
+			"voivodship": "podlaskie",
+			"population": 296401,
+			"area": 102.1
+		},
+		{
+			"id": 11,
+			"name": "Katowice",
+			"district": "Katowice",
+			"voivodship": "śląskie",
+			"population": 289162,
+			"area": 164.6
+		},
+		{
+			"id": 12,
+			"name": "Gdynia",
+			"district": "Gdynia",
+			"voivodship": "pomorskie",
+			"population": 244104,
+			"area": 135.1
+		},
+		{
+			"id": 13,
+			"name": "Częstochowa",
+			"district": "Częstochowa",
+			"voivodship": "śląskie",
+			"population": 215905,
+			"area": 159.7
+		},
+		{
+			"id": 14,
+			"name": "Radom",
+			"district": "Radom",
+			"voivodship": "mazowieckie",
+			"population": 208091,
+			"area": 111.8
+		},
+		{
+			"id": 15,
+			"name": "Rzeszów",
+			"district": "Rzeszów",
+			"voivodship": "podkarpackie",
+			"population": 198476,
+			"area": 126.6
+		},
+		{
+			"id": 16,
+			"name": "Toruń",
+			"district": "Toruń",
+			"voivodship": "kujawsko-pomorskie",
+			"population": 197812,
+			"area": 115.7
+		},
+		{
+			"id": 17,
+			"name": "Sosnowiec",
+			"district": "Sosnowiec",
+			"voivodship": "śląskie",
+			"population": 195978,
+			"area": 91.1
+		},
+		{
+			"id": 18,
+			"name": "Kielce",
+			"district": "Kielce",
+			"voivodship": "świętokrzyskie",
+			"population": 192468,
+			"area": 109.7
+		},
+		{
+			"id": 19,
+			"name": "Gliwice",
+			"district": "Gliwice",
+			"voivodship": "śląskie",
+			"population": 176009,
+			"area": 133.9
+		},
+		{
+			"id": 20,
+			"name": "Olsztyn",
+			"district": "Olsztyn",
+			"voivodship": "warmińsko-mazurskie",
+			"population": 170622,
+			"area": 88.3
+		},
+		{
+			"id": 21,
+			"name": "Zabrze",
+			"district": "Zabrze",
+			"voivodship": "śląskie",
+			"population": 169831,
+			"area": 80.4
+		},
+		{
+			"id": 22,
+			"name": "Bielsko-Biała",
+			"district": "Bielsko-Biała",
+			"voivodship": "śląskie",
+			"population": 168835,
+			"area": 124.5
+		},
+		{
+			"id": 23,
+			"name": "Bytom",
+			"district": "Bytom",
+			"voivodship": "śląskie",
+			"population": 162250,
+			"area": 69.4
+		},
+		{
+			"id": 24,
+			"name": "Zielona Góra",
+			"district": "Zielona Góra",
+			"voivodship": "lubuskie",
+			"population": 140708,
+			"area": 278.3
+		},
+		{
+			"id": 25,
+			"name": "Rybnik",
+			"district": "Rybnik",
+			"voivodship": "śląskie",
+			"population": 136464,
+			"area": 148.4
+		},
+		{
+			"id": 26,
+			"name": "Ruda Śląska",
+			"district": "Ruda Śląska",
+			"voivodship": "śląskie",
+			"population": 135695,
+			"area": 77.7
+		},
+		{
+			"id": 27,
+			"name": "Opole",
+			"district": "Opole",
+			"voivodship": "opolskie",
+			"population": 127561,
+			"area": 148.9
+		},
+		{
+			"id": 28,
+			"name": "Tychy",
+			"district": "Tychy",
+			"voivodship": "śląskie",
+			"population": 126184,
+			"area": 81.8
+		},
+		{
+			"id": 29,
+			"name": "Gorzów Wielkopolski",
+			"district": "Gorzów Wielkopolski",
+			"voivodship": "lubuskie",
+			"population": 121714,
+			"area": 85.7
+		},
+		{
+			"id": 30,
+			"name": "Elbląg",
+			"district": "Elbląg",
+			"voivodship": "warmińsko-mazurskie",
+			"population": 117952,
+			"area": 79.8
+		},
+		{
+			"id": 31,
+			"name": "Płock",
+			"district": "Płock",
+			"voivodship": "mazowieckie",
+			"population": 117573,
+			"area": 88
+		},
+		{
+			"id": 32,
+			"name": "Dąbrowa Górnicza",
+			"district": "Dąbrowa Górnicza",
+			"voivodship": "śląskie",
+			"population": 117516,
+			"area": 188.7
+		},
+		{
+			"id": 33,
+			"name": "Wałbrzych",
+			"district": "Wałbrzych",
+			"voivodship": "dolnośląskie",
+			"population": 108944,
+			"area": 84.7
+		},
+		{
+			"id": 34,
+			"name": "Włocławek",
+			"district": "Włocławek",
+			"voivodship": "kujawsko-pomorskie",
+			"population": 107745,
+			"area": 84.3
+		},
+		{
+			"id": 35,
+			"name": "Tarnów",
+			"district": "Tarnów",
+			"voivodship": "małopolskie",
+			"population": 106748,
+			"area": 72.4
+		},
+		{
+			"id": 36,
+			"name": "Chorzów",
+			"district": "Chorzów",
+			"voivodship": "śląskie",
+			"population": 106272,
+			"area": 33.2
+		},
+		{
+			"id": 37,
+			"name": "Koszalin",
+			"district": "Koszalin",
+			"voivodship": "zachodniopomorskie",
+			"population": 105801,
+			"area": 98.3
+		},
+		{
+			"id": 38,
+			"name": "Kalisz",
+			"district": "Kalisz",
+			"voivodship": "wielkopolskie",
+			"population": 98447,
+			"area": 69.4
+		},
+		{
+			"id": 39,
+			"name": "Legnica",
+			"district": "Legnica",
+			"voivodship": "dolnośląskie",
+			"population": 97958,
+			"area": 56.3
+		},
+		{
+			"id": 40,
+			"name": "Grudziądz",
+			"district": "Grudziądz",
+			"voivodship": "kujawsko-pomorskie",
+			"population": 92894,
+			"area": 57.8
+		},
+		{
+			"id": 41,
+			"name": "Jaworzno",
+			"district": "Jaworzno",
+			"voivodship": "śląskie",
+			"population": 89827,
+			"area": 152.6
+		},
+		{
+			"id": 42,
+			"name": "Słupsk",
+			"district": "Słupsk",
+			"voivodship": "pomorskie",
+			"population": 89180,
+			"area": 43.2
+		},
+		{
+			"id": 43,
+			"name": "Jastrzębie-Zdrój",
+			"district": "Jastrzębie-Zdrój",
+			"voivodship": "śląskie",
+			"population": 87322,
+			"area": 85.3
+		},
+		{
+			"id": 44,
+			"name": "Nowy Sącz",
+			"district": "Nowy Sącz",
+			"voivodship": "małopolskie",
+			"population": 83274,
+			"area": 57.6
+		},
+		{
+			"id": 45,
+			"name": "Jelenia Góra",
+			"district": "Jelenia Góra",
+			"voivodship": "dolnośląskie",
+			"population": 77807,
+			"area": 109.2
+		},
+		{
+			"id": 46,
+			"name": "Siedlce",
+			"district": "Siedlce",
+			"voivodship": "mazowieckie",
+			"population": 77645,
+			"area": 31.9
+		},
+		{
+			"id": 47,
+			"name": "Mysłowice",
+			"district": "Mysłowice",
+			"voivodship": "śląskie",
+			"population": 74413,
+			"area": 65.6
+		},
+		{
+			"id": 48,
+			"name": "Piła",
+			"district": "pilski",
+			"voivodship": "wielkopolskie",
+			"population": 72184,
+			"area": 102.7
+		},
+		{
+			"id": 49,
+			"name": "Konin",
+			"district": "Konin",
+			"voivodship": "wielkopolskie",
+			"population": 71935,
+			"area": 82.3
+		},
+		{
+			"id": 50,
+			"name": "Piotrków Trybunalski",
+			"district": "Piotrków Trybunalski",
+			"voivodship": "łódzkie",
+			"population": 71655,
+			"area": 67.2
+		},
+		{
+			"id": 51,
+			"name": "Lubin",
+			"district": "lubiński",
+			"voivodship": "dolnośląskie",
+			"population": 71278,
+			"area": 40.8
+		},
+		{
+			"id": 52,
+			"name": "Ostrów Wielkopolski",
+			"district": "ostrowski",
+			"voivodship": "wielkopolskie",
+			"population": 71254,
+			"area": 41.9
+		},
+		{
+			"id": 53,
+			"name": "Inowrocław",
+			"district": "inowrocławski",
+			"voivodship": "kujawsko-pomorskie",
+			"population": 71132,
+			"area": 30.4
+		},
+		{
+			"id": 54,
+			"name": "Suwałki",
+			"district": "Suwałki",
+			"voivodship": "podlaskie",
+			"population": 69575,
+			"area": 65.5
+		},
+		{
+			"id": 55,
+			"name": "Stargard",
+			"district": "stargardzki",
+			"voivodship": "zachodniopomorskie",
+			"population": 67430,
+			"area": 48.1
+		},
+		{
+			"id": 56,
+			"name": "Gniezno",
+			"district": "gnieźnieński",
+			"voivodship": "wielkopolskie",
+			"population": 67157,
+			"area": 40.6
+		},
+		{
+			"id": 57,
+			"name": "Ostrowiec Świętokrzyski",
+			"district": "ostrowiecki",
+			"voivodship": "świętokrzyskie",
+			"population": 66837,
+			"area": 46.4
+		},
+		{
+			"id": 58,
+			"name": "Siemianowice Śląskie",
+			"district": "Siemianowice",
+			"voivodship": "śląskie",
+			"population": 65845,
+			"area": 25.5
+		},
+		{
+			"id": 59,
+			"name": "Głogów",
+			"district": "głogowski",
+			"voivodship": "dolnośląskie",
+			"population": 65757,
+			"area": 35.1
+		},
+		{
+			"id": 60,
+			"name": "Pabianice",
+			"district": "pabianicki",
+			"voivodship": "łódzkie",
+			"population": 63479,
+			"area": 33
+		},
+		{
+			"id": 61,
+			"name": "Żory",
+			"district": "Żory",
+			"voivodship": "śląskie",
+			"population": 62815,
+			"area": 64.6
+		},
+		{
+			"id": 62,
+			"name": "Pruszków",
+			"district": "pruszkowski",
+			"voivodship": "mazowieckie",
+			"population": 62742,
+			"area": 19.2
+		},
+		{
+			"id": 63,
+			"name": "Leszno",
+			"district": "Leszno",
+			"voivodship": "wielkopolskie",
+			"population": 62429,
+			"area": 31.9
+		},
+		{
+			"id": 64,
+			"name": "Zamość",
+			"district": "Zamość",
+			"voivodship": "lubelskie",
+			"population": 62368,
+			"area": 30.3
+		},
+		{
+			"id": 65,
+			"name": "Łomża",
+			"district": "Łomża",
+			"voivodship": "podlaskie",
+			"population": 62278,
+			"area": 32.7
+		},
+		{
+			"id": 66,
+			"name": "Tarnowskie Góry",
+			"district": "tarnogórski",
+			"voivodship": "śląskie",
+			"population": 61789,
+			"area": 83.9
+		},
+		{
+			"id": 67,
+			"name": "Ełk",
+			"district": "ełcki",
+			"voivodship": "warmińsko-mazurskie",
+			"population": 61782,
+			"area": 21.1
+		},
+		{
+			"id": 68,
+			"name": "Tomaszów Mazowiecki",
+			"district": "tomaszowski",
+			"voivodship": "łódzkie",
+			"population": 60860,
+			"area": 41.3
+		},
+		{
+			"id": 69,
+			"name": "Chełm",
+			"district": "Chełm",
+			"voivodship": "lubelskie",
+			"population": 60738,
+			"area": 35.3
+		},
+		{
+			"id": 70,
+			"name": "Mielec",
+			"district": "mielecki",
+			"voivodship": "podkarpackie",
+			"population": 59754,
+			"area": 46.9
+		},
+		{
+			"id": 71,
+			"name": "Kędzierzyn-Koźle",
+			"district": "kędzierzyńsko-kozielski",
+			"voivodship": "opolskie",
+			"population": 59603,
+			"area": 123.7
+		},
+		{
+			"id": 72,
+			"name": "Przemyśl",
+			"district": "Przemyśl",
+			"voivodship": "podkarpackie",
+			"population": 59337,
+			"area": 46.2
+		},
+		{
+			"id": 73,
+			"name": "Tczew",
+			"district": "tczewski",
+			"voivodship": "pomorskie",
+			"population": 59105,
+			"area": 22.4
+		},
+		{
+			"id": 74,
+			"name": "Stalowa Wola",
+			"district": "stalowowolski",
+			"voivodship": "podkarpackie",
+			"population": 59098,
+			"area": 82.5
+		},
+		{
+			"id": 75,
+			"name": "Biała Podlaska",
+			"district": "Biała Podlaska",
+			"voivodship": "lubelskie",
+			"population": 56760,
+			"area": 49.4
+		},
+		{
+			"id": 76,
+			"name": "Bełchatów",
+			"district": "bełchatowski",
+			"voivodship": "łódzkie",
+			"population": 56025,
+			"area": 34.6
+		},
+		{
+			"id": 77,
+			"name": "Świdnica",
+			"district": "świdnicki",
+			"voivodship": "dolnośląskie",
+			"population": 55800,
+			"area": 21.8
+		},
+		{
+			"id": 78,
+			"name": "Będzin",
+			"district": "będziński",
+			"voivodship": "śląskie",
+			"population": 55542,
+			"area": 37.4
+		},
+		{
+			"id": 79,
+			"name": "Zgierz",
+			"district": "zgierski",
+			"voivodship": "łódzkie",
+			"population": 55272,
+			"area": 42.3
+		},
+		{
+			"id": 80,
+			"name": "Piekary Śląskie",
+			"district": "Piekary Śląskie",
+			"voivodship": "śląskie",
+			"population": 54468,
+			"area": 40
+		},
+		{
+			"id": 81,
+			"name": "Racibórz",
+			"district": "raciborski",
+			"voivodship": "śląskie",
+			"population": 54004,
+			"area": 75
+		},
+		{
+			"id": 82,
+			"name": "Legionowo",
+			"district": "legionowski",
+			"voivodship": "mazowieckie",
+			"population": 53352,
+			"area": 13.5
+		},
+		{
+			"id": 83,
+			"name": "Ostrołęka",
+			"district": "Ostrołęka",
+			"voivodship": "mazowieckie",
+			"population": 51380,
+			"area": 33.5
+		},
+		{
+			"id": 84,
+			"name": "Rumia",
+			"district": "wejherowski",
+			"voivodship": "pomorskie",
+			"population": 49672,
+			"area": 30.1
+		},
+		{
+			"id": 85,
+			"name": "Świętochłowice",
+			"district": "Świętochłowice",
+			"voivodship": "śląskie",
+			"population": 48817,
+			"area": 13.3
+		},
+		{
+			"id": 86,
+			"name": "Wejherowo",
+			"district": "wejherowski",
+			"voivodship": "pomorskie",
+			"population": 48735,
+			"area": 27
+		},
+		{
+			"id": 87,
+			"name": "Piaseczno",
+			"district": "piaseczyński",
+			"voivodship": "mazowieckie",
+			"population": 48670,
+			"area": 16.2
+		},
+		{
+			"id": 88,
+			"name": "Zawiercie",
+			"district": "zawierciański",
+			"voivodship": "śląskie",
+			"population": 48412,
+			"area": 85.3
+		},
+		{
+			"id": 89,
+			"name": "Skierniewice",
+			"district": "Skierniewice",
+			"voivodship": "łódzkie",
+			"population": 47493,
+			"area": 34.6
+		},
+		{
+			"id": 90,
+			"name": "Wodzisław Śląski",
+			"district": "wodzisławski",
+			"voivodship": "śląskie",
+			"population": 47319,
+			"area": 49.5
+		},
+		{
+			"id": 91,
+			"name": "Starachowice",
+			"district": "starachowicki",
+			"voivodship": "świętokrzyskie",
+			"population": 47238,
+			"area": 31.8
+		},
+		{
+			"id": 92,
+			"name": "Starogard Gdański",
+			"district": "starogardzki",
+			"voivodship": "pomorskie",
+			"population": 47037,
+			"area": 25.3
+		},
+		{
+			"id": 93,
+			"name": "Puławy",
+			"district": "puławski",
+			"voivodship": "lubelskie",
+			"population": 46664,
+			"area": 50.5
+		},
+		{
+			"id": 94,
+			"name": "Tarnobrzeg",
+			"district": "Tarnobrzeg",
+			"voivodship": "podkarpackie",
+			"population": 46057,
+			"area": 85.4
+		},
+		{
+			"id": 95,
+			"name": "Kołobrzeg",
+			"district": "kołobrzeski",
+			"voivodship": "zachodniopomorskie",
+			"population": 45930,
+			"area": 25.7
+		},
+		{
+			"id": 96,
+			"name": "Krosno",
+			"district": "Krosno",
+			"voivodship": "podkarpackie",
+			"population": 45715,
+			"area": 43.5
+		},
+		{
+			"id": 97,
+			"name": "Radomsko",
+			"district": "radomszczański",
+			"voivodship": "łódzkie",
+			"population": 44977,
+			"area": 51.4
+		},
+		{
+			"id": 98,
+			"name": "Dębica",
+			"district": "dębicki",
+			"voivodship": "podkarpackie",
+			"population": 44912,
+			"area": 33.8
+		},
+		{
+			"id": 99,
+			"name": "Otwock",
+			"district": "otwocki",
+			"voivodship": "mazowieckie",
+			"population": 44207,
+			"area": 47.3
+		},
+		{
+			"id": 100,
+			"name": "Skarżysko-Kamienna",
+			"district": "skarżyski",
+			"voivodship": "świętokrzyskie",
+			"population": 43804,
+			"area": 64.4
+		}
+	]
+}
