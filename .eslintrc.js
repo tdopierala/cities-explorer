@@ -26,7 +26,6 @@ module.exports = {
 		'keyword-spacing': 'error',
 		'arrow-spacing': 'error',
 		'space-before-function-paren': ['error', { anonymous: 'always', named: 'never', asyncArrow: 'always' }],
-		'newline-per-chained-call': 'error',
 
 		'space-in-parens': ['error', 'never'],
 		'array-bracket-spacing': ['error', 'never'],
