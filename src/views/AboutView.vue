@@ -37,6 +37,8 @@
 
 					<section>
 						<h3>Launching the project</h3>
+						<h4>Cloning repository</h4>
+						<p><code>git clone https://github.com/tdopierala/cities-explorer.git</code></p>
 						<h4>Project setup:</h4>
 						<p><code>npm install</code></p>
 						<h4>Compiles and hot-reloads for development:</h4>
@@ -58,6 +60,14 @@
 							<li>added new functionality of marking cities as favourites and saving their state in local storage</li>
 							<li>...</li>
 						</ul>
+					</section>
+
+					<section>
+						<h3>Copyright and license</h3>
+						<p>
+							Code and documentation copyright 2011–2022 the <a href="https://github.com/tdopierala">Tomasz Dopierala</a>. Code released under the
+							<a href="https://github.com/tdopierala/cities-explorer/blob/master/LICENSE">Apache License 2.0</a>.
+						</p>
 					</section>
 				</article>
 			</div>

@@ -82,7 +82,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 table {
 	a {
 		color: #333;
@@ -106,6 +106,7 @@ table {
 
 	h3 {
 		margin: 10px 0;
+		text-align: center;
 	}
 }
 </style>

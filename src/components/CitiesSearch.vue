@@ -1,5 +1,5 @@
 <template>
-	<form>
+	<form @submit.prevent>
 		<input @input="filterCity" class="form-control" type="text" id="searchCity" name="searchCity" placeholder="Search city" />
 	</form>
 </template>
