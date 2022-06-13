@@ -1,5 +1,3 @@
-import data from '../data/cities.json';
-
 export interface City {
 	id: number;
 	name: string;
@@ -8,5 +6,3 @@ export interface City {
 	population: number;
 	area: number;
 }
-
-export const citiesMock: City[] = data.cities;

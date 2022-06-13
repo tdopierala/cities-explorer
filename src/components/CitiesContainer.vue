@@ -2,30 +2,22 @@
 	<div>
 		<h1>{{ componentName }}</h1>
 
-		<button @click="sortCities({ order: 'asc', orderBy: 'id' })">Id Asc</button>
-		<button @click="sortCities({ order: 'desc', orderBy: 'id' })">Id Desc</button>
+		<cities-search @onFilterCities="onFilterCities"></cities-search>
 
-		<button @click="sortCities({ order: 'asc', orderBy: 'name' })">Name Asc</button>
-		<button @click="sortCities({ order: 'desc', orderBy: 'name' })">Name Desc</button>
-
-		<button @click="sortCities({ order: 'asc', orderBy: 'population' })">Population Asc</button>
-		<button @click="sortCities({ order: 'desc', orderBy: 'population' })">Population Desc</button>
-
-		<button @click="sortCities({ order: 'asc', orderBy: 'area' })">Area Asc</button>
-		<button @click="sortCities({ order: 'desc', orderBy: 'area' })">Area Desc</button>
-
-		<cities-list :cities="cities"></cities-list>
+		<cities-list :cities="cities" @onSortCities="onSortCities"></cities-list>
 	</div>
 </template>
 
 <script lang="ts">
+import { Filter, filterDefault } from '@/shared/interfaces/filter.model';
 import { defineComponent } from 'vue';
 // import { mapActions } from 'vuex';
 
 import CitiesList from './CitiesList.vue';
+import CitiesSearch from './CitiesSearch.vue';
 
 export default defineComponent({
-	components: { CitiesList },
+	components: { CitiesList, CitiesSearch },
 	name: 'CitiesContainer',
 
 	data() {
@@ -42,14 +34,27 @@ export default defineComponent({
 	},
 
 	methods: {
-		// ...mapActions(['getCieties']),
 		increment() {
 			this.count++;
 		},
 
-		sortCities(filter = { order: 'asc', orderBy: 'name' }) {
+		sortCities(filter: Filter = filterDefault) {
 			this.$store.commit('sortCities', filter);
 		},
+
+		onSortCities(filter: Filter) {
+			console.log('onSortCities()');
+			this.$store.commit('sortCities', filter);
+		},
+
+		onFilterCities(filter: string) {
+			console.log('onFilterCities()', filter);
+			this.$store.commit('filterCities', filter);
+		},
+	},
+
+	mounted() {
+		this.$store.commit('setCities');
 	},
 });
 </script>

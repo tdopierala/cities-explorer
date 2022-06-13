@@ -1,6 +1,6 @@
-// import { City } from "./city.model";
-
 export interface Filter {
-	order: string;
+	order: boolean;
 	orderBy: string;
 }
+
+export const filterDefault: Filter = { order: false, orderBy: 'name' };
