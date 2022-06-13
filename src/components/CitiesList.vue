@@ -44,8 +44,8 @@
 				<td class="right">{{ city.id }}</td>
 				<td class="left">{{ city.name }}</td>
 				<td class="left">{{ city.voivodship }}</td>
-				<td class="right">{{ city.population.toLocaleString() }}</td>
-				<td class="right">{{ city.area.toLocaleString() }} km<sup>2</sup></td>
+				<td class="right">{{ city.population.toLocaleString().replaceAll(',', ' ') }}</td>
+				<td class="right">{{ parseFloat(city.area).toFixed(2) }} km<sup>2</sup></td>
 			</tr>
 			<tr v-if="cities.length === 0">
 				<td colspan="6">
