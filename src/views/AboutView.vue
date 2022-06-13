@@ -21,7 +21,7 @@
 					</section>
 
 					<section>
-						<h3>Użyte technologie i biblioteki</h3>
+						<h3>Used technologies and libraries</h3>
 						<p>
 							<span class="badge bg-success">Vue.js v3.x</span>
 							<span class="badge bg-secondary">Vue Router</span>
@@ -36,7 +36,7 @@
 					</section>
 
 					<section>
-						<h3>Uruchomienie projektu</h3>
+						<h3>Launching the project</h3>
 						<h4>Project setup:</h4>
 						<p><code>npm install</code></p>
 						<h4>Compiles and hot-reloads for development:</h4>
