@@ -1,38 +1,38 @@
 <template>
-	<table>
+	<table class="table table-striped table-hover">
 		<thead>
 			<tr>
 				<th>l.p.</th>
-				<th>
+				<th class="right">
 					id
-					<a href="#" @click.prevent="sortBy('id')">
-						<i v-if="filter.orderBy === 'id' && filter.order" class="fa-solid fa-arrow-down-9-1"></i>
-						<i v-else-if="filter.orderBy === 'id' && !filter.order" class="fa-solid fa-arrow-up-1-9"></i>
+					<a href="#" @click.prevent="sortBy('id')" :class="sortParams.orderBy === 'id' ? 'active' : ''">
+						<i v-if="sortParams.orderBy === 'id' && sortParams.order" class="fa-solid fa-arrow-down-9-1"></i>
+						<i v-else-if="sortParams.orderBy === 'id' && !sortParams.order" class="fa-solid fa-arrow-up-1-9"></i>
 						<i v-else class="fa-solid fa-arrow-down-wide-short"></i>
 					</a>
 				</th>
-				<th>
+				<th class="left">
 					name
-					<a href="#" @click.prevent="sortBy('name')">
-						<i v-if="filter.orderBy === 'name' && filter.order" class="fa-solid fa-arrow-down-z-a"></i>
-						<i v-else-if="filter.orderBy === 'name' && !filter.order" class="fa-solid fa-arrow-up-a-z"></i>
+					<a href="#" @click.prevent="sortBy('name')" :class="sortParams.orderBy === 'name' ? 'active' : ''">
+						<i v-if="sortParams.orderBy === 'name' && sortParams.order" class="fa-solid fa-arrow-down-z-a"></i>
+						<i v-else-if="sortParams.orderBy === 'name' && !sortParams.order" class="fa-solid fa-arrow-up-a-z"></i>
 						<i v-else class="fa-solid fa-arrow-down-wide-short"></i>
 					</a>
 				</th>
-				<th>voivodship</th>
-				<th>
+				<th class="left">voivodship</th>
+				<th class="right">
 					population
-					<a href="#" @click.prevent="sortBy('population')">
-						<i v-if="filter.orderBy === 'population' && filter.order" class="fa-solid fa-arrow-down-9-1"></i>
-						<i v-else-if="filter.orderBy === 'population' && !filter.order" class="fa-solid fa-arrow-up-1-9"></i>
+					<a href="#" @click.prevent="sortBy('population')" :class="sortParams.orderBy === 'population' ? 'active' : ''">
+						<i v-if="sortParams.orderBy === 'population' && sortParams.order" class="fa-solid fa-arrow-down-9-1"></i>
+						<i v-else-if="sortParams.orderBy === 'population' && !sortParams.order" class="fa-solid fa-arrow-up-1-9"></i>
 						<i v-else class="fa-solid fa-arrow-down-wide-short"></i>
 					</a>
 				</th>
-				<th>
+				<th class="right">
 					area
-					<a href="#" @click.prevent="sortBy('area')">
-						<i v-if="filter.orderBy === 'area' && filter.order" class="fa-solid fa-arrow-down-9-1"></i>
-						<i v-else-if="filter.orderBy === 'area' && !filter.order" class="fa-solid fa-arrow-up-1-9"></i>
+					<a href="#" @click.prevent="sortBy('area')" :class="sortParams.orderBy === 'area' ? 'active' : ''">
+						<i v-if="sortParams.orderBy === 'area' && sortParams.order" class="fa-solid fa-arrow-down-9-1"></i>
+						<i v-else-if="sortParams.orderBy === 'area' && !sortParams.order" class="fa-solid fa-arrow-up-1-9"></i>
 						<i v-else class="fa-solid fa-arrow-down-wide-short"></i>
 					</a>
 				</th>
@@ -41,45 +41,71 @@
 		<tbody>
 			<tr v-for="(city, index) in cities" :key="city">
 				<th>{{ index + 1 }}</th>
-				<td>{{ city.id }}</td>
-				<td>{{ city.name }}</td>
-				<td>{{ city.voivodship }}</td>
-				<td>{{ city.population }}</td>
-				<td>{{ city.area }}</td>
+				<td class="right">{{ city.id }}</td>
+				<td class="left">{{ city.name }}</td>
+				<td class="left">{{ city.voivodship }}</td>
+				<td class="right">{{ city.population.toLocaleString() }}</td>
+				<td class="right">{{ city.area.toLocaleString() }} km<sup>2</sup></td>
+			</tr>
+			<tr v-if="cities.length === 0">
+				<td colspan="6">
+					<h3>Sorry! No more cities found. <i class="fa-solid fa-face-frown"></i></h3>
+				</td>
 			</tr>
 		</tbody>
 	</table>
 </template>
 
 <script lang="ts">
-import { Filter, filterDefault } from '@/shared/interfaces/filter.model';
+import { SortParams, paramsDefault } from '@/shared/interfaces/sortParams.model';
 import { defineComponent } from 'vue';
-// import { City } from '@/shared/interfaces/city.model';
 
 export default defineComponent({
 	name: 'CitiesList',
 
 	props: {
-		cities: Object,
+		cities: Array,
 	},
 
 	data() {
 		return {
-			helloWorld: 'some text',
-			count: 0,
-			filter: filterDefault as Filter,
+			sortParams: paramsDefault as SortParams,
 		};
 	},
 
 	methods: {
-		increment() {
-			this.count++;
-		},
 		sortBy(orderBy: string) {
-			console.log('sort()', orderBy, this.filter.orderBy, this.filter.order);
-			this.filter = { orderBy: orderBy, order: !this.filter.order };
-			this.$emit('onSortCities', this.filter);
+			this.sortParams = { orderBy: orderBy, order: !this.sortParams.order };
+			this.$emit('onSortCities', this.sortParams);
 		},
 	},
 });
 </script>
+
+<style lang="scss">
+table {
+	a {
+		color: #333;
+	}
+
+	a:hover {
+		color: #333;
+	}
+
+	a.active {
+		color: red;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	h3 {
+		margin: 10px 0;
+	}
+}
+</style>

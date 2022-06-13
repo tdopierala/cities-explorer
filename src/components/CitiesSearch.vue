@@ -1,7 +1,6 @@
 <template>
 	<form>
-		<label for="searchCity">Find</label>
-		<input type="text" id="searchCity" name="searchCity" @input="filterCity" />
+		<input @input="filterCity" class="form-control" type="text" id="searchCity" name="searchCity" placeholder="Search city" />
 	</form>
 </template>
 
@@ -11,16 +10,17 @@ import { defineComponent } from 'vue';
 export default defineComponent({
 	name: 'CitiesSearch',
 
-	data() {
-		return {};
-	},
-
 	methods: {
 		filterCity($event: Event) {
 			const target = $event.target as HTMLInputElement;
-			console.log(target.value);
 			this.$emit('onFilterCities', target.value);
 		},
 	},
 });
 </script>
+
+<style lang="scss">
+form {
+	margin: 30px 0;
+}
+</style>

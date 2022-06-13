@@ -1,7 +1,7 @@
 import { createStore } from 'vuex';
 
 import { City } from '@/shared/interfaces/city.model';
-import { Filter } from '@/shared/interfaces/filter.model';
+import { SortParams } from '@/shared/interfaces/sortParams.model';
 
 import data from '../shared/data/cities.json';
 
@@ -9,15 +9,17 @@ export default createStore({
 	state: {
 		cities: [] as City[],
 	},
-	getters: {},
+	getters: {
+		getCities: state => state.cities,
+	},
 	mutations: {
 		setCities(state, newCities: City[] = data.cities) {
 			state.cities = newCities;
 		},
 
-		sortCities(state, filter: Filter) {
+		sortCities(state, params: SortParams) {
 			state.cities.sort((a, b) => {
-				const orderBy = filter.orderBy as keyof City;
+				const orderBy = params.orderBy as keyof City;
 				const c1 = a[orderBy];
 				const c2 = b[orderBy];
 
@@ -29,12 +31,12 @@ export default createStore({
 				else return 0;
 			});
 
-			if (filter.order) state.cities.reverse();
+			if (params.order) state.cities.reverse();
 		},
 
 		filterCities(state, phrase: string) {
 			const cities: City[] = data.cities;
-			state.cities = cities.filter((city: City) => city.name.includes(phrase));
+			state.cities = cities.filter((city: City) => city.name.toLowerCase().includes(phrase));
 		},
 	},
 	actions: {},
