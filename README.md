@@ -6,6 +6,8 @@ Cities Explorer is a demo application that allows you to sort and filter a list 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c6e995c8-7e2d-45b4-bd3e-8863dae25552/deploy-status)](https://app.netlify.com/sites/cities-explorer/deploys)
 
+![cities-explorer-screenshot](cities-explorer.png)
+
 ## Basic assumptions
 
 - filtering by city name
